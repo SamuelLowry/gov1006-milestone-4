@@ -43,7 +43,9 @@ gt_data <- nes %>%
 #I had a header but the odd thing is that it would not knit if I had it. 
 #A topic for discussion later on. 
 gt_data %>% 
-  gt() 
+  gt() %>% 
+  tab_header(title = "Gender by Year",
+             subtitle = "National Election Survery")
 ```
 
 # GT Summary
